@@ -1,8 +1,8 @@
-List of Note<br/>
-<div *ngFor="let data of note;indes as i">
-    <div *ngIf="i!=0">
-      <h2>{{i}}. {{note[i].judul}} <button (click)="fav(i)">Favorite</button></h2>
-      <h2>{{note[i].isi}}</h2>
-      <h2>Dibuat tanggal: {{note[i].date}}</h2>
-    </div>
+List of Note<br />
+<div *ngFor="let data of note;index as i">
+  <div *ngIf="i!=0">
+    <h2>{{i}}. {{note[i].judul}} <button (click)="fav(i)">Favorite</button></h2>
+    <h4>{{note[i].isi}}</h4>
+    <h4>Dibuat tanggal: {{note[i].date}}</h4>
+  </div>
 </div>

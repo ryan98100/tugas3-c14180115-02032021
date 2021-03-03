@@ -2,7 +2,7 @@ import { Injectable } from "@angular/core";
 
 @Injectable()
 export class GlobalService {
-  private note = [{ judul: "", isi: "", date: "", fav: "" }];
+  private note = [{ judul: "0", isi: "0", date: "0", fav: "0" }];
   constructor() {}
   addnote(judule, isie, datee) {
     this.note.push({

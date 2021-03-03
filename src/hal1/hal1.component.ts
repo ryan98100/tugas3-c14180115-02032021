@@ -15,10 +15,9 @@ export class Hal1Component implements OnInit {
   ngOnInit() {}
   add() {
     this.temp = this.date.toString();
-    alert(this.temp);
     this.global.addnote(this.judul, this.isi, this.temp);
     this.judul = "";
     this.isi = "";
-    this.date = new Date();
+    alert("sukses");
   }
 }
