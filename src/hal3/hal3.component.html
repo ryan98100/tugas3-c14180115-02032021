@@ -1,1 +1,10 @@
 Favorit Notes
+<div *ngFor="let data of note;index as i">
+  <div *ngIf="data.fav=='1'">
+    <h2>
+      {{i}}. {{note[i].judul}}
+    </h2>
+    <h4>{{note[i].isi}}</h4>
+    <h4>Dibuat tanggal: {{note[i].date}}</h4>
+  </div>
+</div>
